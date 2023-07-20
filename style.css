@@ -1,71 +1,104 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.hero{
 
-    height: 100vh;
-    width: 100%;
-    background-image: url(..img\black.jpg);
-    background-size: cover;
-    background-position: center;
+header {
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+nav ul {
+  list-style-type: none;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%
-    
-}
-.logo{
-    color: black;
-    font-size: 35px;
-    letter-spacing: 1px;
-    cursor: pointer;
 
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
 }
-span{
-    color: #f9004d;
 
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 25px;
 
+.hero {
+  height: 400px;
+  background-image: url(images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
 }
-nav ul li a{
-    color: black;
-    text-decoration: none;
-    text-transform: capitali
-}
-nav ul li a:hover{
-    color: #f9004d;
-    transition: .4s;
 
+.hero-content {
+  padding: 20px;
 }
-.btn{
-    background-color: f9004d;
-    text-decoration: none;
-    color: black;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: transform .4s;
-    
-}
-.btn:hover{
-	transform: scale(1.2);
-}
-.content{
-	position: absolute;
-	top: 50%;
-	left:8%;
 
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about {
+  background-color: #f5f5f5;
+  padding: 50px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.services {
+  padding: 50px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.service-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service-item img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #000;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
 }

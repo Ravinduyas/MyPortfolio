@@ -217,7 +217,36 @@
                     </p>
                 </section>
             </dfn>
-            
+            <section>
+                <form action="submit" method="post"></form>
+                <fieldset>
+                    <legend>
+                        <h1>Contact Information Form</h1>
+                    </legend>
+
+                    <label for="fullName">Full Name : </label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Dhammika Perera">
+                    <br><br>
+
+                    <label for="email">E-mail : </label>
+                    <input type="email" id="email" name="email" required placeholder="flex.com@example.com">
+                    <br><br>
+
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="\+\d{1,4}\d{3,}"
+                        placeholder="+94123456789"
+                        title="Please enter a valid phone number in the format +94123456789.">
+                    <br><br>
+
+                    <label for="message">Message : </label>
+                    <textarea id="message" name="message" rows="4" required
+                        placeholder="Type your message here..."></textarea>
+                    <br><br>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+                </form>
+            </section>
         </section>
     </main>
 

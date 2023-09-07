@@ -1,268 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Case 2</title>
+    <title>Case Two</title>
+    <link rel="stylesheet" href="../assets/css/8.0.1_normalize.css">
     <meta name="viewport" content="width=device-width initial-scale=1">
-    <link rel="stylesheet"  href="normalize.css">
     <style>
-        body>main{
-            width: 100%;
-            height: 200vh;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        body>main>section:first-child{
-            width: 100%;
-            height: 50%;
-            position: absolute;
-            top: 0;
+        
 
+        body::-webkit-scrollbar {
+            width: 0em;
+            height: 0em;
         }
-        body>main>section:last-child{
-            width: 100%;
-            height: 50%;
-            position: absolute;
-            bottom: 0;
 
+        body::-webkit-scrollbar-thumb {
+            background-color: #888;
         }
-        body>main>section>section:first-child{
-            width: 50%;
-            height: 50%;
-            background-color: red;
-            display:inline-block;
-            position: absolute;
-            left: 0;
-            top:0;
-        }
-        body>main>section>section:nth-child(2){
-            width: 50%;
-            height: 50%;
-            background-color: darkgreen;
-            display:inline-block;
-            position: absolute;
-            right: 0;
-            top:0;
-        }
-        body>main>section>section:nth-child(3){
-            width: 50%;
-            height: 50%;
-            background-color: orange;
-            display:inline-block;
-            position: absolute;
-            left: 0;
-            bottom:0;
-        }
-        body>main>section>section:nth-child(4){
-            width: 50%;
-            height: 50%;
-            background-color: deeppink;
-            display:inline-block;
-            position: absolute;
-            right: 0;
-            bottom:0;
-        }
-        body>main>section>section:nth-child(5){
-            position: absolute;
-            width: 180px;
-            height: 180px;
-            display: inline-block;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            margin: auto;
-            border: 1px solid white;
+
+        header {
+            position: relative;
+            height: 80px;
             background: white;
-
-        }
-        body>main>section>section:nth-child(5)>div{
-            width: 60%;
-            height: 60%;
-            border-radius: 100%;
-            background-color: red;
-            position: absolute;
-            right: 0;
-            left: 0;
-            bottom:0;
-            top: 0;
-            margin: auto;
-        }
-        body>main>section>section>section:first-child{
-            width: 150px;
-            height: 150px;
-            border-radius: 100%;
-            background-color: white;
-            position: absolute;
-            right: 0;
-            left: 0;
-            bottom:0;
-            top: 0;
-            margin: auto;
-
-        }
-        body>main>section>section>section:first-child>div{
-            width: 50%;
-            height: 50%;
-            background-color: red;
-            display:inline-block;
-            position: absolute;
-            right: 0;
-            left: 0;
-            bottom:0;
-            top: 0;
-            margin: auto;
+            box-shadow: 2px 1px 2px 1px #260f0f;
         }
 
-        body>main>section>section:first-child>section:nth-child(2){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border-bottom-right-radius:100%;
-            position: absolute;
-            top: 0;
-            left: 0;
+        header>img {
+            width: 200px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
 
-        }
-        body>main>section>section:first-child>section:nth-child(3){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border-bottom-left-radius:100%;
+        header>nav {
             position: absolute;
-            top: 0;
-            right: 0;
+            right: 20px;
+            top: 10px;
         }
-        body>main>section>section:nth-child(2)>section:nth-child(2){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border-bottom-right-radius:100%;
-            position: absolute;
-            top: 0;
-            left: 0;
 
+        header>nav>ul>li {
+            display: inline-block;
+            padding: 10px;
+            font-weight: bold;
         }
-        body>main>section>section:nth-child(2)>section:nth-child(3){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border-bottom-left-radius:100%;
+
+        main {
+            position: relative;
+        }
+
+        main>nav {
+            width: 300px;
+            background: #5f175f;
             position: absolute;
             top: 0;
-            right: 0;
-        }
-        body>main>section>section:nth-child(3)>section:nth-child(2){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border-top-right-radius:100%;
-            position: absolute;
             bottom: 0;
-            left: 0;
-
-        }
-        body>main>section>section:nth-child(3)>section:nth-child(3){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border-top-left-radius:100%;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
-        body>main>section>section:nth-child(4)>section:nth-child(2){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border-top-right-radius:100%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-
-        }
-        body>main>section>section:nth-child(4)>section:nth-child(3){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            border-top-left-radius:100%;
-            position: absolute;
-            bottom: 0;
-            right: 0;
         }
 
+        main>nav>ul {
+            color: white;
+            list-style: none;
+        }
 
+        main>nav>ul>li {
+            padding-top: 15px;
+        }
+
+        main>section {
+            margin-left: 300px;
+            padding: 10px;
+        }
+
+        main>section>p:nth-child(2) {
+            margin-top: 0px;
+        }
+
+        main>section>p:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        footer {
+            height: 30px;
+            background: gray;
+        }
+
+        footer>p {
+            text-align: center;
+            color: white;
+            margin-top: 0;
+            padding-top: 20px;
+        }
     </style>
 </head>
+
 <body>
-<main>
-    <section>
+
+    <header>
+        <img src="../assets/images/ijse.png" alt="LOGO">
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+
         <section>
+
             <section>
-                <div></div>
+                <picture>
+
+                    <img src="img/walk.gif" alt="gif1" width="32%">
+                    <img src="img/walk.gif" alt="gif2" width="32%">
+                    <img src="img/walk.gif" alt="gif3" width="32%">
+
+                </picture>
             </section>
-            <section></section>
-            <section></section>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto culpa doloribus enim iusto
+                nam
+                nemo nobis similique ullam voluptatibus? Corporis, molestiae nam. Corporis esse facere labore
+                perspiciatis
+                voluptate voluptatem!</p>
+
         </section>
-        <section>
-            <section>
-                <div></div>
-            </section>
-            <section></section>
-            <section></section>
-        </section>
-        <section>
-            <section>
-                <div></div>
-            </section>
-            <section></section>
-            <section></section>
-        </section>
-        <section>
-            <section>
-                <div></div>
-            </section>
-            <section></section>
-            <section></section>
-        </section>
-        <section>
-            <div></div>
-        </section>
-    </section>
-    <section>
-        <section>
-            <section>
-                <div></div>
-            </section>
-            <section></section>
-            <section></section>
-        </section>
-        <section>
-            <section>
-                <div></div>
-            </section>
-            <section></section>
-            <section></section>
-        </section>
-        <section>
-            <section>
-                <div></div>
-            </section>
-            <section></section>
-            <section></section>
-        </section>
-        <section>
-            <section>
-                <div></div>
-            </section>
-            <section></section>
-            <section></section>
-        </section>
-        <section>
-            <div></div>
-        </section>
-    </section>
-</main>
+    </main>
+
+    <footer>
+        <p><small>Developed By IJSE </small></p>
+    </footer>
+
+
+    <footer></footer>
 </body>
+
 </html>

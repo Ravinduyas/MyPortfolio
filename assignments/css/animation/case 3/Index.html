@@ -7,12 +7,12 @@
     <link href="../../../asserts/css/normalize.css" rel="stylesheet">
     <style>
         body{
-            background-color: #cfcfcf;
+            background-color: #ffffff;
         }
         main {
             width: 500px;
             height: 480px;
-            box-shadow: 1px 3px 5px 1px #736060;
+            border: 2px solid black;
             position: absolute;
             left: 0;
             right: 0;
@@ -20,15 +20,18 @@
             bottom: 0;
             margin: auto;
             overflow: hidden;
+            
         }
         main > section {
             height: 100%;
             width: 400%;
             display: flex;
             animation-name: anima;
-            animation-duration: 10s;
+            animation-duration: 6s;
             animation-direction: alternate;
             animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            aniam
         }
 
         main > section > div {
@@ -61,16 +64,16 @@
         }
 
         @keyframes anima {
-            0%{
+            0%,15%{
                 transform: translateX(0);
             }
-            50% {
+            30%,45% {
                 transform: translateX(-25%);
             }
-            80% {
+            60%,75% {
                 transform: translateX(-50%);
             }
-            100% {
+            85%,100% {
                 transform: translateX(-75%);
             }
 

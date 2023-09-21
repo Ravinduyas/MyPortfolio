@@ -6,8 +6,9 @@
 }
 
 body {
-  background: #f30707;
+  background: #000000;
   color: #ffffff;
+
 }
 
 header {
@@ -61,6 +62,10 @@ body>header>nav>div>menu li a:hover {
 
 }
 
+body>header>section>menu {
+  margin-right: 0;
+}
+
 body>header>section>menu li {
   display: inline-block;
   padding-right: 0;
@@ -110,7 +115,7 @@ body>main>section>section>img {
   bottom: 0;
   margin: auto;
   margin-left: 2.5vw;
-  
+
 }
 
 body>main>section:nth-child(1)>section {
@@ -120,8 +125,10 @@ body>main>section:nth-child(1)>section {
 
 
 }
-body>main>section:nth-child(2){
+
+body>main>section:nth-child(2) {
   background: #000;
+
 }
 
 body>main>section:nth-child(2)>h1 {
@@ -137,25 +144,60 @@ body>main>section:nth-child(2)>h1 {
   margin-bottom: 50px;
 
 }
+
+body>main>section:nth-child(2)>section>div>img {
+  width: 37vh;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+
+}
+
+body>main>section:nth-child(2)>section>blockquote>p {
+  display: inline-block;
+  width: 100px
+}
+
+body>main>section:nth-child(2)>section>blockquote {
+  display: inline-block;
+}
+
+body>main>section:nth-child(2)>section {
+  display: inline-block;
+  /* border: #ff5500 1px solid; */
+  
+  margin-left: 2%;
+  padding: 2%;
+  right: 0;
+
+}
+
+body>main>section:nth-child(3) {
+  background: #000000;
+
+}
+
 body>main>section:nth-child(3)>h1 {
   padding: 2.5vh;
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #7d6666;
+  background: #ff5500;
   height: 10vh;
   color: rgb(0, 0, 0);
   width: 2;
   margin-left: 0;
-  margin-bottom: 50px;
-
+  margin-bottom: 10vh;
+  margin-top: 10vh;
 }
+
 body>main>section:nth-child(4)>h1 {
   padding: 2.5vh;
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #7d6666;
+  background: #ff5500;
   height: 10vh;
   color: rgb(0, 0, 0);
   width: 2;
@@ -163,12 +205,13 @@ body>main>section:nth-child(4)>h1 {
   margin-bottom: 50px;
 
 }
+
 body>main>section:nth-child(5)>h1 {
   padding: 2.5vh;
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #7d6666;
+  background: #ff5500;
   height: 10vh;
   color: rgb(0, 0, 0);
   width: 2;
@@ -176,9 +219,9 @@ body>main>section:nth-child(5)>h1 {
   margin-bottom: 5vh;
 
 }
-body>main>section:nth-child(2)>section>blockquote{
-  
-}
+
+
+
 
 footer {
   background-color: #000;

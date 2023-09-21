@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!--preamble-->
+<html lang="en">
+
+<head>
+    <style>
+        
+
+        div {
+            border: white solid 2px;
+            border-radius: 22px;
+            height: 100px;
+            width: 200px;
+            margin: 2px;
+            position: relative;
+            animation-name: anima;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: 20;
+            animation-direction: alternate;
+            background: purple;
+
+        }
+
+        @keyframes anima {
+            0% {
+                rotate: 0deg;
+                color: blue;
+                top: 0px;
+                left: 0px;
+               
+                
+            }
+
+            25% {
+                rotate: 180deg;
+                background: rgb(51, 255, 0);
+                top:0;
+                left: 500px;
+            }
+
+            50% {
+                rotate: 360deg;
+                background: rgb(106, 0, 255);
+                top: 500px;
+                left: 500px;
+            }
+            75% {
+                rotate: 180deg;
+                background: rgb(255, 0, 0);
+                top: 500px;
+                left: 0;
+            }
+            100% {
+                rotate: 360deg;
+                background: rgb(224, 118, 118);
+                top: 0;
+                left: 0;
+            }
+
+            
+        }
+    </style>
+    <title>My Port </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+        <div></div>
+    
+</body>
+
+</html>

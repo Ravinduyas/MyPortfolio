@@ -128,12 +128,6 @@ body>main>section:nth-child(1)>section {
 
 }
 
-body>main>section:nth-child(2) {
-  background: #000;
-  height: 90vh;
-  position: relative;
-}
-
 body>main>section:nth-child(2)>h1 {
   padding: 2.5vh;
   top: 0;
@@ -144,17 +138,31 @@ body>main>section:nth-child(2)>h1 {
   color: rgb(0, 0, 0);
   width: 2;
   margin-left: 0;
-  margin-bottom: 25%;
+  
 
+}
+body>main>section:nth-child(2){
+  height: 100vh;
+}
+
+body>main>section:nth-child(2)>section {
+  display: inline-block;
+  position: relative;
+  background: ;
+  
 }
 
 body>main>section:nth-child(2)>section>div>img {
-  width: 35vh;
+  position: relative;
+  display: inline;
+  width: 40vw;
   height: auto;
   border-top-right-radius: 5%;
   border-bottom-left-radius: 25%;
   border-top-left-radius: 35%;
   border-bottom-right-radius: 35%;
+  margin-left: 20vw;
+  margin-top: 10vh;
 
 }
 
@@ -163,20 +171,13 @@ body>main>section:nth-child(2)>section>blockquote>p {
   position: relative;
   width: 200px;
   text-align: justify;
+  border: #fff;
+  padding: 5%;
+  margin-left: 20%;
+  margin-top: 20%;
 }
 
-body>main>section:nth-child(2)>section {
-  display: inline-block;
-  position: relative;
 
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-
-
-}
 
 body>main>section:nth-child(3) {
   background: #000000;
@@ -194,7 +195,10 @@ body>main>section:nth-child(3)>h1 {
   width: 2;
   margin-left: 0;
   margin-bottom: 10vh;
-  margin-top: 10vh;
+  
+}
+body>main>section:nth-child(3){
+  
 }
 
 body>main>section:nth-child(4)>h1 {
@@ -239,4 +243,9 @@ footer {
 .Gallery>div>img {
   position: relative;
   display: inline-block;
+}
+@media all and (min-width: 520px) and (max-width: 768px){
+
+  
+
 }

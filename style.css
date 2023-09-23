@@ -214,6 +214,9 @@ body>main>section:nth-child(4)>h1 {
   margin-bottom: 50px;
 
 }
+.skills>section>div>img{
+  k
+}
 
 body>main>section:nth-child(5)>h1 {
   padding: 2.5vh;
@@ -228,6 +231,13 @@ body>main>section:nth-child(5)>h1 {
   margin-bottom: 5vh;
 
 }
+.Gallery>div>img {
+  position: relative;
+  display: inline-block;
+}
+@media all and (min-width: 520px) and (max-width: 768px){
+
+}
 
 
 
@@ -240,12 +250,3 @@ footer {
 
 }
 
-.Gallery>div>img {
-  position: relative;
-  display: inline-block;
-}
-@media all and (min-width: 520px) and (max-width: 768px){
-
-  
-
-}

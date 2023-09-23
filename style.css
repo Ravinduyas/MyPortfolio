@@ -215,7 +215,7 @@ body>main>section:nth-child(4)>h1 {
 
 }
 .skills>section>div>img{
-  k
+  display: inline-block;
 }
 
 body>main>section:nth-child(5)>h1 {

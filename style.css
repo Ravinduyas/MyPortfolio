@@ -138,10 +138,11 @@ body>main>section:nth-child(2)>h1 {
   color: rgb(0, 0, 0);
   width: 2;
   margin-left: 0;
-  
+
 
 }
-body>main>section:nth-child(2){
+
+body>main>section:nth-child(2) {
   height: 100vh;
 }
 
@@ -149,7 +150,7 @@ body>main>section:nth-child(2)>section {
   display: inline-block;
   position: relative;
   background: ;
-  
+
 }
 
 body>main>section:nth-child(2)>section>div>img {
@@ -195,10 +196,17 @@ body>main>section:nth-child(3)>h1 {
   width: 2;
   margin-left: 0;
   margin-bottom: 10vh;
-  
+
 }
-body>main>section:nth-child(3){
-  
+
+.projects>section>div {
+  display: inline-block;
+}
+
+.projects>section>div>a>p {
+display: inline-block;
+position: absolute;
+
 }
 
 body>main>section:nth-child(4)>h1 {
@@ -214,7 +222,8 @@ body>main>section:nth-child(4)>h1 {
   margin-bottom: 50px;
 
 }
-.skills>section>div>img{
+
+.skills>section>div>img {
   display: inline-block;
 }
 
@@ -231,13 +240,24 @@ body>main>section:nth-child(5)>h1 {
   margin-bottom: 5vh;
 
 }
+
+.Gallery>div {
+  
+}
 .Gallery>div>img {
   position: relative;
   display: inline-block;
 }
-@media all and (min-width: 520px) and (max-width: 768px){
-
+.Gallery>aside>div {
+ 
+  display: inline-block;
 }
+.Gallery>aside>div>img {
+  display: inline-block;
+ 
+}
+
+@media all and (min-width: 520px) and (max-width: 768px) {}
 
 
 
@@ -249,4 +269,3 @@ footer {
   text-align: center;
 
 }
-

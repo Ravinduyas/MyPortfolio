@@ -6,8 +6,30 @@
 }
 
 body {
+
   background: #000000;
   color: #ffffff;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Apply styles to the spinner */
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite; /* Use the "spin" animation */
+  margin: 20px auto; /* Center the spinner horizontally */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 
@@ -18,9 +40,9 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 5vh;
-  position: fixed; /* Make the header fixed */
-  top: 0; /* Stick it to the top of the viewport */
-  width: 100%; /* Make it span the full width of the viewport */
+  position: fixed;
+  top: 0; 
+  width: 100%; 
   z-index: 10000;
 }
 
@@ -98,7 +120,6 @@ body>main>section>section>hgroup>h3>span {
 
 }
 
-
 body>main>section>section>hgroup {
   position: relative;
   display: inline-block;
@@ -120,7 +141,8 @@ body>main>section>section>img {
   bottom: 0;
   margin: auto;
   margin-left: 5vw;
-
+  
+  background: circle-gradient(to right, transparent, #fffefe, transparent);
 }
 
 
@@ -181,11 +203,11 @@ body>main>section:nth-child(2)>section>blockquote>p {
   /*  */
 }
 
-.projects{
+#projects{
   text-align: center;
 }
 
-.projects h1{
+#projects h1{
   padding: 2.5vh;
   margin-bottom: 10vh;
   background: #ff5500;
@@ -195,28 +217,42 @@ body>main>section:nth-child(2)>section>blockquote>p {
   margin-left: 0;
 }
 
-.projects>section{
+#projects>section{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.projects>section>div{
+#projects>section>div{
   margin: 20px;
 }
 
-.projects>section>div>a{
+#projects>section>div>a{
   text-decoration: none;
   color: #ffffff;
 }
 
-.projects>section>div>a>img{
-  max-height: 200px;
+#projects>img:first-child{
+  width: 10px;
 }
 
-.projects>section>div>a>p{
+#projects>section>div>a>img{
+  max-height: 500px;
+}
+
+#projects>section>div>a>p{
   margin-top: 10px;
   font-weight: bold;
+}
+#projects>section>div>a:hover {
+  margin-top: 10px;
+  
+}
+
+#projects>img{
+  max-width: 100px;
+  border: #ff5500 solid 5px;
+  border-radius: 80px;
 }
 
 body>main>section:nth-child(4)>h1 {
@@ -251,43 +287,60 @@ body>main>section:nth-child(5)>h1 {
 
 }
 
+
 .Gallery {
-  text-align: center; 
+  text-align: center;
   
 }
 
 .Gallery h1 {
   padding: 2.5vh;
-  margin-bottom: px;
-  
+  background: #ff5500;
+  color: rgb(0, 0, 0);
+  width: 2;
+  margin-left: 0;
+  margin-bottom: 10vh;
 }
 
+/* Grid container for images */
 .grid-container {
+  margin: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: repeat(4, 1fr); 
-  gap: 10px; 
+  grid-template-columns: 1fr 1fr; /* 50% width for the first image, 50% for the rest initially */
+  gap: 10px; /* Adjust the gap between grid items as needed */
 }
 
-.grid-container>div{
-  width: 25%; 
-  text-align: center; 
+/* Grid item styles */
+.grid-item {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.first-image {
-  grid-column: span 2;
-  grid-row: span 2;
+/* Specify the width for different images */
+.grid-item.big {
+  grid-column: span 2; /* Make the first image span two columns (50% width) */
 }
-.Gallery>img:nth-child(1) {
-  max-width: 50%;
+
+.grid-item.small {
+  grid-column: span 1; /* Make the next two images span one column each (25% width) */
+}
+.Gallery img {
+  
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
   height: auto;
 }
 
 
-img {
-  max-width: 50%; 
-  height: auto; 
-}
+
 
 footer {
   background-color: #000;
@@ -355,6 +408,8 @@ footer {
     width: 90%; 
   }
 }
+
+
 
 @media all and (min-width: 375px) and (max-width: 425px) {
 

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 4</title>
+  <meta name="viewport" charset="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="../../../../assets/css/normalize.css">
+  <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+      
+      main>section{
+          
+          width: 99.5vw;
+          height: 99vh;
+          border: 2px solid black;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          overflow: hidden;
+      }
+      main>section>div{
+          display: inline-block;
+      }
+      main>section>div:nth-child(1){
+          
+          width: 99.5vw;
+          height: 99vh;
+          background: url("assest/img/sky.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+      main>section>section:nth-child(2){
+          width:200%;
+          height: 300px;
+          display: flex;
+          overflow: hidden;
+          position: relative;
+          bottom: 551px;
+          z-index: 1;
+          animation-name: anima;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+      }
+      main>section>section:nth-child(2)>div{
+          flex-grow: 1;
+          height: 100%;
+      }
+      main>section>section:nth-child(2)>div:first-child{
+          background: url("assest/img/city.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+      main>section>section:nth-child(2)>div:last-child{
+          background: url("assest/img/city.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+      main>section>section:nth-child(3){
+          width: 200%;
+          height: 250px;
+          display: flex;
+          overflow: hidden;
+          animation-name: anima;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          position: relative;
+          bottom: 558px;
+          z-index: 2;
+      }
+      main>section>section:nth-child(3)>div{
+          flex-grow: 1;
+          height: 100%;
+      }
+      main>section>section:nth-child(3)>div:first-child{
+          background: url("assest/img/road.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+      main>section>section:nth-child(3)>div:last-child{
+          background: url("assest/img/road.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+      main>section>div:nth-child(4) {
+          width: 277px;
+          height: 116px;
+          background: url("assest/img/car.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: relative;
+          bottom: 830px;
+          left: 311px;
+          z-index: 4;
+      }
+      main>section>div:nth-child(5){
+          width: 50px;
+          height: 50px;
+          background: url("assest/img/wheel.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          animation-name: animation;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          position: relative;
+          bottom: 835px;
+          left: 224px;
+          z-index: 4;
+      }
+      main>section>div:nth-child(6){
+          width: 50px;
+          height: 50px;
+          background: url("assest/img/wheel.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          animation-name: animation;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          position: relative;
+          bottom: 836px;
+          left: 0px;
+          z-index: 4;
+      }
+      @keyframes animation {
+          0%{
+              transform: rotate(0deg);
+          }
+          100%{
+              transform: rotate(360deg);
+          }
+      }
+      @keyframes anima {
+          0%{
+              transform: translateX(0);
+          }
+          100%{
+              transform: translateX(calc((-100%/2)*1));
+          }
+      }
+  </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div></div>
+            <section>
+                <div></div>
+                <div></div>
+            </section>
+            <section>
+                <div></div>
+                <div></div>
+            </section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+</body>
+</html>

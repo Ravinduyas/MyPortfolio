@@ -1,5 +1,5 @@
 * {
-  padding: 0px;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -8,19 +8,20 @@
 body {
   background: #000000;
   color: #ffffff;
-  /* cursor :none; */
-
 }
 
 
 header {
   background: #ff5500;
-  padding: 20px;
+  padding: 20px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  cursor: auto;
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Stick it to the top of the viewport */
+  width: 100%; /* Make it span the full width of the viewport */
+  z-index: 10000;
 }
 
 nav {
@@ -34,15 +35,17 @@ body>header>nav>div>menu li {
   padding-right: 1rem;
   list-style-type: none;
 
+
 }
 
 body>header>nav>div>menu li a {
   text-decoration: none;
   font-family: monospace;
   font-size: 1rem;
-  color: #ffffff;
+  color: #fcfcfc;
   text-align: center;
-
+  transition: 0.3s;
+  padding: 5px;
 }
 
 body>header>nav>div>menu li a:hover {
@@ -50,12 +53,14 @@ body>header>nav>div>menu li a:hover {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.3rem;
   color: #000000;
+  transition: 0.3s;
 
 
 }
 
 body>header>section>menu {
   margin-right: 0;
+
 }
 
 body>header>section>menu li {
@@ -84,7 +89,6 @@ body>main>section>section>hgroup>h1:nth-child(2) {
 
 body>main>section>section>hgroup>h3 {
   position: relative;
-
   color: #fff;
   font-size: 1.5rem;
 
@@ -123,9 +127,9 @@ body>main>section>section>img {
 
 body>main>section:nth-child(1)>section {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   background: #000000;
-
+  animation: bounce;
 }
 
 body>main>section:nth-child(2)>h1 {
@@ -138,7 +142,7 @@ body>main>section:nth-child(2)>h1 {
   color: rgb(0, 0, 0);
   width: 2;
   margin-left: 0;
-
+  
 
 }
 
@@ -164,8 +168,15 @@ body>main>section:nth-child(2)>section>div>img {
   border-bottom-right-radius: 35%;
   margin-left: 20vw;
   margin-top: 10vh;
-
+  
 }
+
+
+body>main>section:nth-child(2)>section>div>img:hover {
+  background: #ff5500;
+}
+
+
 
 body>main>section:nth-child(2)>section>blockquote>p {
   display: inline-block;
@@ -175,7 +186,7 @@ body>main>section:nth-child(2)>section>blockquote>p {
   border: #fff;
   padding: 5%;
   margin-left: 20%;
-  margin-top: 20%;
+  margin-top: 20%;z-index: 100000;
 }
 
 
@@ -204,8 +215,8 @@ body>main>section:nth-child(3)>h1 {
 }
 
 .projects>section>div>a>p {
-display: inline-block;
-position: absolute;
+  display: inline-block;
+  position: absolute;
 
 }
 
@@ -242,24 +253,23 @@ body>main>section:nth-child(5)>h1 {
 }
 
 .Gallery>div {
-  
+
 }
+
 .Gallery>div>img {
   position: relative;
   display: inline-block;
 }
+
 .Gallery>aside>div {
- 
+
   display: inline-block;
 }
+
 .Gallery>aside>div>img {
   display: inline-block;
- 
+
 }
-
-@media all and (min-width: 520px) and (max-width: 768px) {}
-
-
 
 
 footer {

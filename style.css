@@ -183,7 +183,43 @@ body>main>section:nth-child(2)>section>blockquote>p {
   /*  */
 }
 
+.projects{
+  text-align: center;
+}
 
+.projects h1{
+  padding: 2.5vh;
+  margin-bottom: 10vh;
+  background: #ff5500;
+  height: 10vh;
+  color: rgb(0, 0, 0);
+  width: 2;
+  margin-left: 0;
+}
+
+.projects>section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects>section>div{
+  margin: 20px;
+}
+
+.projects>section>div>a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.projects>section>div>a>img{
+  max-height: 200px;
+}
+
+.projects>section>div>a>p{
+  margin-top: 10px;
+  font-weight: bold;
+}
 
 
 body>main>section:nth-child(4)>h1 {

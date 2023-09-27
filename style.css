@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 5vh;
   position: fixed; /* Make the header fixed */
   top: 0; /* Stick it to the top of the viewport */
   width: 100%; /* Make it span the full width of the viewport */
@@ -54,7 +54,6 @@ body>header>nav>div>menu li a:hover {
   font-size: 1.3rem;
   color: #000000;
   transition: 0.3s;
-
 
 }
 
@@ -143,7 +142,6 @@ body>main>section:nth-child(2)>h1 {
   width: 2;
   margin-left: 0;
   
-
 }
 
 body>main>section:nth-child(2) {
@@ -221,7 +219,6 @@ body>main>section:nth-child(2)>section>blockquote>p {
   font-weight: bold;
 }
 
-
 body>main>section:nth-child(4)>h1 {
   padding: 2.5vh;
   top: 0;
@@ -255,34 +252,34 @@ body>main>section:nth-child(5)>h1 {
 }
 
 .Gallery {
-  text-align: center; /* Center-align the content horizontally */
+  text-align: center; 
   
 }
 
 .Gallery h1 {
   padding: 2.5vh;
-  margin-bottom: px; /* Adjust as needed */
-  /* Your other styles for the section heading */
+  margin-bottom: px;
+  
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
-  grid-template-rows: repeat(4, 1fr); /* Create 4 equal-height rows */
-  gap: 10px; /* Adjust the gap between grid items as needed */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(4, 1fr); 
+  gap: 10px; 
 }
 
 .grid-container>div{
-  width: 25%; /* By default, all items take up 100% width */
-  text-align: center; /* Center-align the content within each grid item */
+  width: 25%; 
+  text-align: center; 
 }
 
 .first-image {
-  grid-column: span 2; /* Make the first image span two columns (50% width) */
-  grid-row: span 2; /* Make the first image span two rows (50% height) */
+  grid-column: span 2;
+  grid-row: span 2;
 }
 .Gallery>img:nth-child(1) {
-  max-width: 50%; /* Ensure images don't exceed their container width */
+  max-width: 50%;
   height: auto;
 }
 
@@ -299,7 +296,9 @@ footer {
   text-align: center;
 
 }
+@media all and (max-width: 320px){
 
+}
 
 @media all and (min-width: 320px) and (max-width: 375px) {
   body>header>nav>div>menu li {
@@ -356,8 +355,6 @@ footer {
     width: 90%; 
   }
 }
-
-
 
 @media all and (min-width: 375px) and (max-width: 425px) {
 

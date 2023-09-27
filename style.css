@@ -171,8 +171,6 @@ body>main>section:nth-child(2)>section>div>img {
   
 }
 
-
-/* Default styles for all screen sizes */
 body>main>section:nth-child(2)>section>blockquote>p {
   display: inline-block;
   position: relative;
@@ -180,43 +178,13 @@ body>main>section:nth-child(2)>section>blockquote>p {
   text-align: justify;
   border: #fff;
   padding: 5%;
-  margin-left: 0; /* Remove the margin-left */
-  margin-top: 0; /* Remove the margin-top */
-  /* Add any additional custom styles you need for this section */
+  margin-left: 0; 
+  margin-top: 0; 
+  /*  */
 }
 
 
 
-
-
-body>main>section:nth-child(3) {
-  background: #000000;
-
-}
-
-body>main>section:nth-child(3)>h1 {
-  padding: 2.5vh;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: #ff5500;
-  height: 10vh;
-  color: rgb(0, 0, 0);
-  width: 2;
-  margin-left: 0;
-  margin-bottom: 10vh;
-
-}
-
-.projects>section>div {
-  display: inline-block;
-}
-
-.projects>section>div>a>p {
-  display: inline-block;
-  position: absolute;
-
-}
 
 body>main>section:nth-child(4)>h1 {
   padding: 2.5vh;
@@ -250,25 +218,43 @@ body>main>section:nth-child(5)>h1 {
 
 }
 
-.Gallery>div {
-
+.Gallery {
+  text-align: center; /* Center-align the content horizontally */
+  
 }
 
-.Gallery>div>img {
-  position: relative;
-  display: inline-block;
+.Gallery h1 {
+  padding: 2.5vh;
+  margin-bottom: px; /* Adjust as needed */
+  /* Your other styles for the section heading */
 }
 
-.Gallery>aside>div {
-
-  display: inline-block;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+  grid-template-rows: repeat(4, 1fr); /* Create 4 equal-height rows */
+  gap: 10px; /* Adjust the gap between grid items as needed */
 }
 
-.Gallery>aside>div>img {
-  display: inline-block;
-
+.grid-container>div{
+  width: 25%; /* By default, all items take up 100% width */
+  text-align: center; /* Center-align the content within each grid item */
 }
 
+.first-image {
+  grid-column: span 2; /* Make the first image span two columns (50% width) */
+  grid-row: span 2; /* Make the first image span two rows (50% height) */
+}
+.Gallery>img:nth-child(1) {
+  max-width: 50%; /* Ensure images don't exceed their container width */
+  height: auto;
+}
+
+
+img {
+  max-width: 50%; 
+  height: auto; 
+}
 
 footer {
   background-color: #000;
@@ -321,8 +307,6 @@ footer {
     width: 80%; 
     margin: 0 auto; 
   }
-
-  
 
   body>main>section:nth-child(3)>h1,
   body>main>section:nth-child(4)>h1,

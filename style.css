@@ -80,13 +80,13 @@ body>header>nav>div>menu li a:hover {
 }
 
 body>header>section>menu {
-  margin-right: 0;
+  margin-right: 10px;
 
 }
 
 body>header>section>menu li {
   display: inline-block;
-  padding-right: 0;
+  padding-right: 5px;
 
 }
 
@@ -338,6 +338,162 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Styling for the contact section */
+#contact {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the social media links */
+#contact menu {
+  list-style: none;
+  padding: 0;
+}
+
+#contact menu li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#contact menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+#contact menu li a:hover {
+  color: #ff5500;
+}
+
+/* Styling for the "Call me" button */
+#contact button {
+  background-color: #ff5500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #ff3300;
+}
+
+/* Styling for the email link */
+#contact a[href^="mailto"] {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+#contact a[href^="mailto"]:hover {
+  color: #ff5500;
+}
+
+/* Styling for the contact form */
+#contact form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#contact fieldset {
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#contact legend {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#contact label {
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contact input[type="submit"] {
+  background-color: #ff5500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #ff3300;
+}
+/* Container for the contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Style for form elements */
+.contact-form label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ff5500;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #ff5500;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #ff3300;
+
+}
+
 
 
 

@@ -12,20 +12,15 @@ body {
   
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Apply styles to the spinner */
+/
 .spinner {
   border: 6px solid #f3f3f3;
   border-top: 6px solid #3498db;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  animation: spin 2s linear infinite; /* Use the "spin" animation */
-  margin: 20px auto; /* Center the spinner horizontally */
+  animation: spin 2s linear infinite;
+  margin: 20px auto; 
 }
 
 ::-webkit-scrollbar {
@@ -302,15 +297,15 @@ body>main>section:nth-child(5)>h1 {
   margin-bottom: 10vh;
 }
 
-/* Grid container for images */
+
 .grid-container {
   margin: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 50% width for the first image, 50% for the rest initially */
-  gap: 10px; /* Adjust the gap between grid items as needed */
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;
 }
 
-/* Grid item styles */
+
 .grid-item {
   text-align: center;
   display: flex;
@@ -318,13 +313,13 @@ body>main>section:nth-child(5)>h1 {
   align-items: center;
 }
 
-/* Specify the width for different images */
+
 .grid-item.big {
-  grid-column: span 2; /* Make the first image span two columns (50% width) */
+  grid-column: span 2; 
 }
 
 .grid-item.small {
-  grid-column: span 1; /* Make the next two images span one column each (25% width) */
+  grid-column: span 1; 
 }
 .Gallery img {
   
@@ -339,7 +334,7 @@ img {
   height: auto;
 }
 
-/* Styling for the contact section */
+
 #contact {
   background-color: #333;
   color: #fff;
@@ -350,7 +345,7 @@ img {
   align-items: center;
 }
 
-/* Styling for the social media links */
+
 #contact menu {
   list-style: none;
   padding: 0;
@@ -372,7 +367,7 @@ img {
   color: #ff5500;
 }
 
-/* Styling for the "Call me" button */
+
 #contact button {
   background-color: #ff5500;
   color: #fff;
@@ -389,7 +384,7 @@ img {
   background-color: #ff3300;
 }
 
-/* Styling for the email link */
+
 #contact a[href^="mailto"] {
   text-decoration: none;
   color: #fff;
@@ -451,7 +446,7 @@ img {
 #contact input[type="submit"]:hover {
   background-color: #ff3300;
 }
-/* Container for the contact form */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -460,7 +455,7 @@ img {
   margin-top: 20px;
 }
 
-/* Style for form elements */
+
 .contact-form label {
   font-size: 18px;
   margin-bottom: 5px;
@@ -493,9 +488,6 @@ img {
   background-color: #ff3300;
 
 }
-
-
-
 
 
 footer {

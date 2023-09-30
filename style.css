@@ -497,7 +497,21 @@ footer {
 /*media queries*/
 
 @media all and (max-width: 320px) {
+  body>header>nav>div>menu li {
+    padding-right: 0.5rem;
+  }
 
+  body>header>nav>div>menu li a {
+    font-size: 0.9rem;
+  }
+
+  body>main>section>section>h1:first-child {
+    font-size: 3rem;
+  }
+
+  body>main>section>section>h1:nth-child(2) {
+    font-size: 2rem;
+  }
   
 }
 

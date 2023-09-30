@@ -1053,7 +1053,30 @@ footer {
 
 }
 
-@media all and (min-width: 375px) and (max-width: 425px) {}
+@media all and (min-width: 375px) and (max-width: 425px) {
+
+  body>header>nav>div>menu li {
+    padding-right: 0.5rem;
+  }
+
+  body>header>nav>div>menu li a {
+    font-size: 0.9rem;
+  }
+
+  body>main>section>section>h1:first-child {
+    font-size: 3rem;
+  }
+
+  body>main>section>section>h1:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  body>main>section>section>hgroup {
+    font-size: 1.5rem;
+    padding-left: 2vh;
+    padding-right: 5vw;
+  }
+}
 
 
 @media all and (min-width: 768px) and (max-width: 1024px) {}

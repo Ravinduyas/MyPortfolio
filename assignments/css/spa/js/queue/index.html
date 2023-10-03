@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue</title>
+    <style>
+        body{
+            background: #000;
+        }
+        section {
+            width: 95vw;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        section > div {
+            flex-grow: 1;
+            height: calc(100%/3);
+            border: 0 solid rgb(255, 255, 255);
+        }
+
+        section > div:first-child {
+            align-self: start;
+        }
+
+        section > div:last-child {
+            align-self: end;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<script>
+    let colors = ["red", "white", "orange", "blue", "yellow", "green"];
+    var divs = document.querySelectorAll("section > div");
+    var currentIndex = 0;
+
+    function changeColor() {
+        divs.forEach(function(div, index) {
+            div.style.backgroundColor = colors[(currentIndex + index) % colors.length];
+        });
+        currentIndex = (currentIndex + 1) % colors.length;
+    }
+
+    setInterval(changeColor, 1000);
+</script>
+</body>
+</html>

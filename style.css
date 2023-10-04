@@ -95,6 +95,7 @@ body>main>section>section>hgroup>h3 {
 
 
 
+
 body>main>section>section>hgroup>h1:first-child {
   color: #fff;
   font-size: 5rem;
@@ -202,6 +203,59 @@ body>main>section:nth-child(2)>section>blockquote>p {
   margin-top: 0;
   /*  */
 }
+
+.services {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.services h2 {
+  margin: 0px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  color: #ff5500;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 5rem;
+}
+
+.services-container .services-box {
+  flex: 1 1 calc(33.333% - 5rem); 
+  background: rgb(237, 9, 9);
+  padding: 4rem 2rem; 
+  border-radius: 4rem;
+  text-align: center;
+  transition: .7s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
+
+.services-container .services-box:hover {
+  border-color: #DAC0A3;
+  transform: scale(1.1);
+}
+
+.services-box i {
+  font-size: 5rem;
+  color: #DAC0A3;
+}
+
+.services-box h3 {
+  font-size: 3.5rem;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+.services-box p {
+  font-size: 2.3rem;
+  margin: 1rem 0 3rem;
+}
+
+
+
 
 #projects {
   text-align: center;
@@ -2038,3 +2092,6 @@ footer {
 
 
 @media all and (min-width: 1440px) and (max-width: 1560px) {}
+
+
+

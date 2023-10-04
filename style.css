@@ -255,6 +255,43 @@ body>main>section:nth-child(2)>section>blockquote>p {
 }
 
 
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .services {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .services h2 {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
+
+  .services-container {
+    gap: 3rem;
+  }
+
+  .services-container .services-box {
+    flex: 1 1 calc(50% - 3rem);
+    padding: 2rem 1rem;
+  }
+
+  .services-box i {
+    font-size: 4rem;
+  }
+
+  .services-box h3 {
+    font-size: 2.5rem;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+  }
+
+  .services-box p {
+    font-size: 2rem;
+    margin: 0.5rem 0 2rem;
+  }
+}
+
+
+
 
 
 #projects {

@@ -45,6 +45,15 @@ nav {
   position: relative;
 
 }
+.navigation menu li a {
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 1rem;
+  color: #fcfcfc;
+  text-align: center;
+  transition: 0.3s;
+  padding: 5px;
+}
 
 body>header>nav>div>menu li {
   display: inline-block;
@@ -54,15 +63,8 @@ body>header>nav>div>menu li {
 
 }
 
-body>header>nav>div>menu li a {
-  text-decoration: none;
-  font-family: monospace;
-  font-size: 1rem;
-  color: #fcfcfc;
-  text-align: center;
-  transition: 0.3s;
-  padding: 5px;
-}
+
+
 
 body>header>nav>div>menu li a:hover {
   text-decoration: none;
@@ -81,10 +83,55 @@ body>header>section>menu {
 body>header>section>menu li {
   display: inline-block;
   padding-right: 5px;
+  
 
 }
 body>header>section>menu li a:hover {
-  color: #e6e6e6;
+  color: #ff0000;
+  background: #000000;
+  border-radius: 5px;
+  transition-delay: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+ 
+  .burger-button {
+    display: block; 
+    background: #ff5500;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .burger-button .bar {
+    width: 30px;
+    height: 3px;
+    background: #fcfcfc;
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .burger-button.active + nav {
+    display: block;
+  }
+
+  .burger-button.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .burger-button.active .bar:nth-child(2) {
+    opacity: 1;
+  }
+
+  .burger-button.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
 }
 
 
@@ -548,6 +595,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  background: #f0886d;
 }
 
 
@@ -586,7 +634,7 @@ img {
 
 
 footer {
-  background-color: #000;
+  background-color: #333;
   padding: 20px;
   color: #fff;
   text-align: center;

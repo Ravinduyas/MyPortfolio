@@ -83,11 +83,17 @@ body>header>section>menu li {
   padding-right: 5px;
 
 }
+body>header>section>menu li a:hover {
+  color: #e6e6e6;
+}
+
 
 body>main>section>section>hgroup>h3 {
   color: #fff;
 
 }
+
+
 
 body>main>section>section>hgroup>h1:first-child {
   color: #fff;
@@ -174,8 +180,8 @@ body>main>section:nth-child(2)>section {
 body>main>section:nth-child(2)>section>div>img {
   position: relative;
   display: inline;
-  width: 40vw;
-  height: auto;
+
+  height: 40vh;
   border-top-right-radius: 5%;
   border-bottom-left-radius: 25%;
   border-top-left-radius: 35%;
@@ -212,6 +218,7 @@ body>main>section:nth-child(2)>section>blockquote>p {
 }
 
 #projects>section {
+  margin: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,7 +503,21 @@ footer {
 }
 
 
+@keyframes liftupdown {
 
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2.4rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
 
 
 

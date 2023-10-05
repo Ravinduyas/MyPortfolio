@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assest/css/bootstrap.css">
+
+    <style>
+        .mans {
+            position: absolute;
+            display: flex;
+            width: 70%;
+            height: 200px;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            margin: auto;            
+        }
+
+        .mans>div {
+            position: relative;
+            border:2px solid aqua;
+            width: calc(100%/6);
+            background: url("assets/gif.gif");
+            background-repeat: no-repeat;
+            background-color: aqua;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .mans>div>h1{
+            position: absolute;
+            height: fit-content;
+            top: 0%;
+            right: 0%;
+            bottom: 0%;
+            margin: auto;
+        }
+
+        .home{
+            position: absolute;
+            top: 21%;
+            height: 40%;
+            width: 25%;
+            right: 0%;
+            background: url("assets/house.gif");
+            background-repeat: no-repeat;
+            background-color: aqua;
+            background-size: cover;
+        }
+
+        section:nth-child(3){
+            position: absolute;
+            left: 0%;
+            top: 70%;
+            right: 0%;
+            margin: auto;
+            width: fit-content;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="mans">
+        <div>
+            <h1>A</h1>
+        </div>
+
+        <div>
+            <h1>B</h1>
+        </div>
+
+        <div>
+            <h1>C</h1>
+        </div>
+
+        <div>
+            <h1>D</h1>
+        </div>
+
+        <div>
+            <h1>E</h1>
+        </div>
+
+        <div>
+            <h1>F</h1>
+        </div>
+
+    </div>
+
+    <section class="home"></section>
+
+    <section>
+        <button id="startbtn" type="button" class="btn btn-primary">Start</button>
+        <button id="stopbtn" type="button" class="btn btn-danger">Stop</button>
+    </section>
+
+   
+</body>
+
+<script>
+    // Variables to keep track of the animation state
+    let animationInterval;
+    let isAnimating = false;
+
+    // Function to move the last child to the first position
+    function moveLastToFirst() {
+        const mansDiv = document.querySelector('.mans');
+        const lastChild = mansDiv.lastElementChild;
+        mansDiv.removeChild(lastChild);
+        mansDiv.insertBefore(lastChild, mansDiv.firstElementChild);
+    }
+
+    // Function to start the animation
+    function startAnimation() {
+        if (!isAnimating) {
+            animationInterval = setInterval(moveLastToFirst, 1000); // Change the interval as needed
+            isAnimating = true;
+        }
+    }
+
+    // Function to stop the animation
+    function stopAnimation() {
+        if (isAnimating) {
+            clearInterval(animationInterval);
+            isAnimating = false;
+        }
+    }
+
+    // Event listener for the "Start" button
+    document.getElementById('startbtn').addEventListener('click', startAnimation);
+
+    // Event listener for the "Stop" button
+    document.getElementById('stopbtn').addEventListener('click', stopAnimation);
+</script>
+
+</html>

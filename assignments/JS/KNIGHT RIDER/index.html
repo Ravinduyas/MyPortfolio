@@ -33,7 +33,7 @@ main {
 }
 
 #range {
-    width: 25%;
+    width: 100%;
 }
 
 .content > h2, .content > h2 {
@@ -51,12 +51,12 @@ main {
     <div id="head-container" class="position-absolute top-0">
         <div id="cantain">
             <div class="content">
-                <h2 class="h2 text-danger">speed:</h2>
+                <h2>speed:</h2>
                 <h2 id="speedTxt" class="h2">50</h2>
             </div>
             <div id="sep" ></div>
             <div class="content">
-                <h2 class="h2 text-danger">.                   .Wait :</h2>
+                <h2>Wait :</h2>
                 <h2 id="timeTxt" class="h2">2000</h2>
             </div>
         </div>
@@ -76,7 +76,7 @@ main {
             <input type="range" class="form-range" id="inputSlider" min="50" max="150" value="50">
         </div>
     </div>
-    <audio id="audio" src="assets/background-music/knightrider.mp3" loop>
+    <audio id="audio" src="assets/knightrider.mp3" loop>
     </audio>
 </main>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
@@ -89,8 +89,8 @@ const rangeInput = document.getElementById('inputSlider');
 const speed = document.getElementById('speedTxt');
 const time = document.getElementById('timeTxt');
 
-let colors_right = ["#962727", "#ec6666", "#eaadad", "white"];
-let colors_left = ["#962727", "#ec6666", "#eaadad", "white"];
+let colors_right = ["#960000", "#ec0000", "#eaadaa", "#fff"];
+let colors_left = ["#960000", "#ec0000", "#eaaaaa", "#fff"];
 let setColor_right = [];
 let setColor_left = [];
 

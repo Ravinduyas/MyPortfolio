@@ -24,7 +24,6 @@ body {
   width: 0px;
 }
 
-
 header {
   background: #ff5500;
   padding: 20px 5%;
@@ -215,8 +214,6 @@ body>main>section:nth-child(2) {
 body>main>section:nth-child(2)>section {
   display: inline-block;
   position: relative;
-
-
 }
 
 body>main>section:nth-child(2)>section>div>img {
@@ -295,7 +292,6 @@ body>main>section:nth-child(2)>section>blockquote>p {
   margin: 1rem 0 3rem;
 }
 
-
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .services {
     margin-left: 20px;
@@ -331,6 +327,108 @@ body>main>section:nth-child(2)>section>blockquote>p {
   }
 }
 
+/* Style the assignment section */
+.assignment {
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #000000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.assignment .heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.assignment .heading span {
+  color: #ff5500;
+}
+
+.assignment-container {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.assignment-box {
+  background-color: #ff5500;
+  border: 1px solid #ff5500;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: calc(33.33% - 40px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.assignment-box:hover {
+  transform: scale(1.05);
+}
+
+.assignment-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.assignment-layer {
+  margin-top: 20px;
+}
+
+.assignment-layer h4 {
+  font-size: 1.5rem;
+}
+
+.assignment-layer a {
+  display: block;
+  margin-top: 10px;
+  color: #ff5500; 
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.assignment-layer a:hover {
+  color: #ff3300;
+}
+
+
+.assignment-layer a i {
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .assignment-container {
+    flex-direction: column; 
+  }
+
+  .assignment-box {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+}
+
+@media screen and (min-width: 768) and (max-width: 1440px) {
+
+  .assignment{
+    margin-left:100px ;
+    margin-right: 100px;
+  }
+
+  .assignment-container {
+    flex-direction: column; 
+  }
+
+  .assignment-box {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+}
 
 
 
@@ -624,6 +722,59 @@ img {
 .contact-form input[type="submit"]:hover {
   background-color: #ff3300;
 
+}
+legend {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+input[type="submit"] {
+  background-color: #ff5500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: red;
+}
+
+
+input:invalid,
+textarea:invalid {
+  border: 2px solid red;
+}
+
+
+input[type="tel"]::after {
+  content: "Format: +94123456789";
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
 }
 
 

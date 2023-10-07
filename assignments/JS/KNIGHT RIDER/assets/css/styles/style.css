@@ -1,0 +1,35 @@
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+#main-container {
+    width: 85%;
+    height: 7%;
+}
+
+#head-container {
+    width: 85%;
+}
+
+#foot-container {
+    width: 85%;
+    bottom: 30vh;
+}
+
+#sep {
+    height: 2em;
+}
+
+.ride-ele {
+    width: calc(100% / 6);
+    height: 100%;
+}
+
+#range {
+    width: 25%;
+}
+
+.content > h2, .content > h2 {
+    display: inline-block;
+}

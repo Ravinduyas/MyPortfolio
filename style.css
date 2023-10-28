@@ -41,6 +41,7 @@ nav {
   display: inline-block;
   position: relative;
 }
+
 .navigation menu li a {
   text-decoration: none;
   font-family: monospace;
@@ -79,6 +80,7 @@ body>header>section>menu li {
   padding-right: 5px;
 
 }
+
 body>header>section>menu li a:hover {
   color: #ff0000;
   background: #000000;
@@ -87,9 +89,9 @@ body>header>section>menu li a:hover {
 }
 
 @media screen and (max-width: 768px) {
- 
+
   .burger-button {
-    display: block; 
+    display: block;
     background: #ff5500;
     padding: 10px;
     position: absolute;
@@ -110,7 +112,7 @@ body>header>section>menu li a:hover {
     display: none;
   }
 
-  .burger-button.active + nav {
+  .burger-button.active+nav {
     display: block;
   }
 
@@ -256,16 +258,16 @@ body>main>section:nth-child(2)>section>blockquote>p {
 
 .services-container {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 5rem;
 }
 
 .services-container .services-box {
-  flex: 1 1 calc(33.333% - 5rem); 
+  flex: 1 1 calc(33.333% - 5rem);
   background: rgb(237, 9, 9);
-  padding: 4rem 2rem; 
+  padding: 4rem 2rem;
   border-radius: 4rem;
   text-align: center;
   transition: .7s ease;
@@ -386,7 +388,7 @@ body>main>section:nth-child(2)>section>blockquote>p {
 .assignment-layer a {
   display: block;
   margin-top: 10px;
-  color: #ff5500; 
+  color: #ff5500;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
@@ -404,29 +406,29 @@ body>main>section:nth-child(2)>section>blockquote>p {
 
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .assignment-container {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .assignment-box {
-    width: 100%; 
-    margin-bottom: 20px; 
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 768) and (max-width: 1440px) {
 
-  .assignment{
-    margin-left:100px ;
+  .assignment {
+    margin-left: 100px;
     margin-right: 100px;
   }
 
   .assignment-container {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .assignment-box {
-    width: 100%; 
-    margin-bottom: 20px; 
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -723,6 +725,7 @@ img {
   background-color: #ff3300;
 
 }
+
 legend {
   font-size: 24px;
   font-weight: bold;
@@ -2322,6 +2325,3 @@ footer {
 
 
 @media all and (min-width: 1440px) and (max-width: 1560px) {}
-
-
-

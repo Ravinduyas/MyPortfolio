@@ -39,7 +39,7 @@ export const ContactSection: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           {/* Fiverr call to action */}
-          <div className="lg:col-span-7 p-8 rounded-2xl border border-emerald-900/50 bg-gradient-to-br from-emerald-950/40 via-[#0d0d10] to-[#0d0d10] shadow-xl flex flex-col">
+          <div className="lg:col-span-7 p-8 rounded-2xl border border-emerald-900/50 bg-gradient-to-br from-emerald-950/40 via-surface to-surface shadow-xl flex flex-col">
             <div className="text-xs font-mono text-emerald-400 uppercase tracking-wider">Freelance projects</div>
             <h3 className="text-2xl font-bold text-white font-display mt-2">Hire me on Fiverr</h3>
             <p className="text-sm text-neutral-300 mt-2 max-w-lg leading-relaxed">
@@ -103,7 +103,7 @@ export const ContactSection: React.FC = () => {
           </div>
 
           {/* Other channels */}
-          <div className="lg:col-span-5 p-6 rounded-2xl border border-neutral-800 bg-[#0d0d10] space-y-4">
+          <div className="lg:col-span-5 p-6 rounded-2xl border border-neutral-800 bg-surface space-y-4">
             <h3 className="text-sm font-semibold text-white font-mono uppercase tracking-wider">
               Other enquiries
             </h3>

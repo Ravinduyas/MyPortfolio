@@ -26,11 +26,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
       {/* Scrims: darken the text side and fade into the next section */}
       <div
-        className="absolute inset-0 bg-[#09090b]/75 lg:bg-transparent lg:bg-gradient-to-r lg:from-[#09090b] lg:via-[#09090b]/80 lg:to-[#09090b]/10"
+        className="absolute inset-0 bg-page/75 lg:bg-transparent lg:bg-gradient-to-r lg:from-page lg:via-page/80 lg:to-page/10"
         aria-hidden="true"
       />
       <div
-        className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#09090b] to-transparent"
+        className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-page to-transparent"
         aria-hidden="true"
       />
 
@@ -87,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
           {/* Proof metrics */}
           <dl className="grid grid-cols-2 sm:grid-cols-4 gap-px max-w-xl rounded-xl overflow-hidden border border-neutral-800 bg-neutral-800/80">
             {DEVELOPER_PROFILE.metrics.map((item) => (
-              <div key={item.label} className="bg-[#0b0b0e]/85 backdrop-blur px-4 py-3">
+              <div key={item.label} className="bg-surface/85 backdrop-blur px-4 py-3">
                 <dt className="text-[11px] text-neutral-400 leading-tight">{item.label}</dt>
                 <dd className="text-lg font-semibold font-mono tabular-nums text-cyan-400 mt-1">{item.value}</dd>
               </div>
@@ -102,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             { icon: Layers, color: 'text-blue-400', title: 'Full-Stack TypeScript', text: 'React front ends with Node.js APIs and MongoDB' },
             { icon: ShieldCheck, color: 'text-emerald-400', title: 'Live & Findable', text: 'Automated deploys, technical SEO and structured data' },
           ].map(({ icon: Icon, color, title, text }) => (
-            <div key={title} className="bg-[#0b0b0e]/85 backdrop-blur p-5 flex items-start gap-3">
+            <div key={title} className="bg-surface/85 backdrop-blur p-5 flex items-start gap-3">
               <Icon className={`w-5 h-5 ${color} shrink-0 mt-0.5`} />
               <div>
                 <div className="text-sm font-semibold text-white">{title}</div>

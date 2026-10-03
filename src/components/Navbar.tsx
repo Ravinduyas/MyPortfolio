@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight, FileText } from 'lucide-react';
 import { DEVELOPER_PROFILE } from '../data/portfolioData';
+import { ThemeToggle } from './ThemeToggle';
 
 interface NavbarProps {
   onOpenResume: () => void;
@@ -48,7 +49,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenContact }) =
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 ${
         isScrolled
-          ? 'bg-[#09090b]/90 backdrop-blur-md border-b border-neutral-800/80 shadow-lg shadow-black/20'
+          ? 'bg-page/90 backdrop-blur-md border-b border-neutral-800/80 shadow-lg shadow-black/20'
           : 'bg-transparent border-b border-transparent'
       }`}
     >
@@ -83,44 +84,48 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenContact }) =
           })}
         </nav>
 
-        {/* Zone 3: 1-2 primary actions */}
-        <div className="hidden sm:flex items-center gap-3">
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+
+          {/* Zone 3: 1-2 primary actions */}
+          <div className="hidden sm:flex items-center gap-3">
+            <button
+              onClick={onOpenResume}
+              className="flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium text-neutral-300 hover:text-white bg-neutral-900 border border-neutral-800 rounded-lg hover:border-neutral-700 transition-all whitespace-nowrap"
+              title="Inspect CV / Resume"
+            >
+              <FileText className="w-3.5 h-3.5 text-cyan-400" />
+              <span>CV</span>
+            </button>
+
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                onOpenContact();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="flex items-center gap-1.5 px-4 py-1.5 text-xs font-semibold text-neutral-950 bg-gradient-to-r from-cyan-400 to-cyan-300 hover:from-cyan-300 hover:to-cyan-200 rounded-lg transition-all shadow-sm hover:shadow-cyan-500/20 whitespace-nowrap"
+            >
+              <span>Hire Me</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
+          {/* Mobile menu button */}
           <button
-            onClick={onOpenResume}
-            className="flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium text-neutral-300 hover:text-white bg-neutral-900 border border-neutral-800 rounded-lg hover:border-neutral-700 transition-all whitespace-nowrap"
-            title="Inspect CV / Resume"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 text-neutral-400 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded-lg"
+            aria-label="Toggle navigation menu"
           >
-            <FileText className="w-3.5 h-3.5 text-cyan-400" />
-            <span>CV</span>
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-
-          <a
-            href="#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              onOpenContact();
-              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="flex items-center gap-1.5 px-4 py-1.5 text-xs font-semibold text-neutral-950 bg-gradient-to-r from-cyan-400 to-cyan-300 hover:from-cyan-300 hover:to-cyan-200 rounded-lg transition-all shadow-sm hover:shadow-cyan-500/20 whitespace-nowrap"
-          >
-            <span>Hire Me</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
-          </a>
         </div>
-
-        {/* Mobile menu button */}
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-neutral-400 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 rounded-lg"
-          aria-label="Toggle navigation menu"
-        >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
       </div>
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#0c0c0e] border-b border-neutral-800 px-6 py-4 space-y-3">
+        <div className="md:hidden bg-surface border-b border-neutral-800 px-6 py-4 space-y-3">
           {navLinks.map((link) => (
             <a
               key={link.href}

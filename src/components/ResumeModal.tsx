@@ -22,11 +22,11 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
       aria-modal="true"
     >
       <div
-        className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-[#0a0a0c] border border-neutral-800 rounded-2xl shadow-2xl text-left"
+        className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-surface border border-neutral-800 rounded-2xl shadow-2xl text-left"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Sticky action bar */}
-        <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-4 bg-[#0a0a0c]/95 border-b border-neutral-800 backdrop-blur-md">
+        <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-4 bg-surface/95 border-b border-neutral-800 backdrop-blur-md">
           <div className="flex items-center gap-2 text-xs font-mono text-cyan-400">
             <span>CURRICULUM VITAE</span>
             <span aria-hidden="true">·</span>
@@ -52,7 +52,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         </div>
 
         {/* Printable Resume Content */}
-        <div className="p-8 sm:p-12 space-y-8 bg-[#0a0a0c] text-neutral-200 text-sm">
+        <div className="p-8 sm:p-12 space-y-8 bg-surface text-neutral-200 text-sm">
           {/* Header */}
           <div className="border-b border-neutral-800 pb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>

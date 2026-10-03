@@ -93,7 +93,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               <div
                 key={project.id}
                 onClick={() => setActiveModalProject(project)}
-                className={`group relative overflow-hidden rounded-2xl border border-neutral-800 bg-[#0d0d10] cursor-pointer transition-all duration-300 hover:border-neutral-600 hover:shadow-2xl hover:shadow-cyan-950/20 flex flex-col ${
+                className={`group relative overflow-hidden rounded-2xl border border-neutral-800 bg-surface cursor-pointer transition-all duration-300 hover:border-neutral-600 hover:shadow-2xl hover:shadow-cyan-950/20 flex flex-col ${
                   isFeatured ? 'md:col-span-2 lg:col-span-2' : 'col-span-1'
                 }`}
               >
@@ -106,7 +106,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                     referrerPolicy="no-referrer"
                   />
                   {/* Measured Scrim */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d10] via-[#0d0d10]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
 
                   {/* Kicker Tag */}
                   <div className="absolute top-4 left-4 right-4 flex items-center justify-between text-[11px] font-mono">

@@ -34,7 +34,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
       aria-labelledby="modal-project-title"
     >
       <div
-        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#0d0d10] border border-neutral-800 rounded-2xl shadow-2xl text-left"
+        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-surface border border-neutral-800 rounded-2xl shadow-2xl text-left"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header Media Banner */}
@@ -45,7 +45,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d10] via-[#0d0d10]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
 
           {/* Close Button */}
           <button

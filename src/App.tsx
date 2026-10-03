@@ -28,7 +28,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#09090b] text-[#f4f4f5] selection:bg-cyan-400 selection:text-neutral-950 font-sans">
+    <div className="min-h-screen bg-page text-neutral-100 selection:bg-cyan-400 selection:text-neutral-950 font-sans">
       {/* Sticky Navigation Bar */}
       <Navbar
         onOpenResume={() => setIsResumeOpen(true)}

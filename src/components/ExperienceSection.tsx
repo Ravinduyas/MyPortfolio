@@ -42,7 +42,7 @@ export const ExperienceSection: React.FC = () => {
 
               {/* Main Content Card */}
               <div className="flex-1 pl-10 md:pl-6 w-full">
-                <div className="p-6 rounded-xl border border-neutral-800 bg-[#0d0d10] hover:border-neutral-700 transition-colors">
+                <div className="p-6 rounded-xl border border-neutral-800 bg-surface hover:border-neutral-700 transition-colors">
                   <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-3">
                     <div>
                       <h3 className="text-lg font-bold text-white font-display">

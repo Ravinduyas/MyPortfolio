@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Copy, Check, ArrowUpRight, MessageSquare, FileText, ShieldCheck, Linkedin, Facebook, Instagram } from 'lucide-react';
-import { DEVELOPER_PROFILE } from '../data/portfolioData';
+import { DEVELOPER_PROFILE, FIVERR_GIGS } from '../data/portfolioData';
 
 const STEPS = [
   { icon: MessageSquare, title: 'Message me on Fiverr', text: 'Tell me about your business and what you need built.' },
@@ -58,6 +58,36 @@ export const ContactSection: React.FC = () => {
                 </li>
               ))}
             </ol>
+
+            {/* Fiverr gigs */}
+            <div className="mt-8">
+              <div className="text-xs font-mono text-emerald-400 uppercase tracking-wider">My Fiverr gigs</div>
+              <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {FIVERR_GIGS.map(({ title, text, href, image }) => (
+                  <a
+                    key={href}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-xl overflow-hidden bg-neutral-900/60 border border-neutral-800 hover:border-emerald-700/70 transition-colors group flex flex-col"
+                  >
+                    <img
+                      src={image}
+                      alt={`${title} Fiverr gig thumbnail`}
+                      loading="lazy"
+                      className="w-full h-auto border-b border-neutral-800 group-hover:opacity-90 transition-opacity"
+                    />
+                    <div className="p-4 flex items-start justify-between gap-3">
+                      <div>
+                        <div className="text-sm font-semibold text-white">{title}</div>
+                        <div className="text-xs text-neutral-400 mt-1 leading-relaxed">{text}</div>
+                      </div>
+                      <ArrowUpRight className="w-4 h-4 text-neutral-500 group-hover:text-emerald-400 transition-colors shrink-0 mt-0.5" />
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
 
             <div className="mt-8 lg:mt-auto lg:pt-8">
               <a

@@ -1,6 +1,8 @@
 import { SkillItem, ProjectItem, ExperienceItem } from '../types/portfolio';
 
 import heroStudioImg from '../assets/images/ravindu-hero-hd.jpg';
+import gigNextjsImg from '../assets/images/fiverr-gig-nextjs.jpg';
+import gigAiVisibilityImg from '../assets/images/fiverr-gig-ai-visibility.jpg';
 
 export { heroStudioImg };
 
@@ -27,6 +29,21 @@ export const DEVELOPER_PROFILE = {
     { value: 'IJSE', label: 'Software Engineering' }
   ]
 };
+
+export const FIVERR_GIGS = [
+  {
+    title: 'Migrate your website to Next.js',
+    text: 'Move an existing site to Next.js for faster loading, better SEO and easier upkeep.',
+    href: 'https://www.fiverr.com/s/AGy5NlQ',
+    image: gigNextjsImg
+  },
+  {
+    title: 'AI visibility score with GEO, AEO & SEO',
+    text: 'Find out how your brand shows up in ChatGPT, Gemini and Claude, and get a plan to rank there.',
+    href: 'https://www.fiverr.com/s/kXLqQvL',
+    image: gigAiVisibilityImg
+  }
+];
 
 export const SKILLS_DATA: SkillItem[] = [
   // Frontend

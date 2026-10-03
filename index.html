@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Apply the saved (or system) theme before first paint to avoid a flash
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem('theme'); } catch (e) {}
+        var light = saved ? saved === 'light' : window.matchMedia('(prefers-color-scheme: light)').matches;
+        if (light) document.documentElement.classList.add('light');
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ravindu Kariyawasam — Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Ravindu Kariyawasam, a full-stack developer in Sri Lanka building websites, booking engines and POS software for tourism and small businesses." />
+    <meta property="og:title" content="Ravindu Kariyawasam — Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio of Ravindu Kariyawasam, a full-stack developer in Sri Lanka building websites, booking engines and POS software for tourism and small businesses." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-C5tcoN2f.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DPF2Wlbi.css">
+  </head>
+  <body class="bg-page text-neutral-100 antialiased selection:bg-cyan-400 selection:text-neutral-950">
+    <div id="root"></div>
+  </body>
+</html>
+

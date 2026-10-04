@@ -25,7 +25,7 @@ export const DEVELOPER_PROFILE = {
   metrics: [
     { value: '44', label: 'Public Repositories' },
     { value: '10+', label: 'Client Projects' },
-    { value: '2020', label: 'Coding Since' },
+    { value: '2022', label: 'Coding Since' },
     { value: 'IJSE', label: 'Software Engineering' }
   ]
 };
@@ -377,11 +377,12 @@ export const PROJECTS_DATA: ProjectItem[] = [
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
   {
-    period: '2024 — Present',
-    role: 'Freelance Full-Stack Developer',
-    company: 'Ravindu Creator',
-    location: 'Sri Lanka (Remote)',
+    period: 'Jan 2026 — Present',
+    role: 'Co-Founder & Software Engineer',
+    company: 'Grobern Pvt Ltd',
+    location: 'Sri Lanka',
     achievements: [
+      'Co-founded Grobern and lead its software engineering, representing the company with clients from first brief to launch.',
       'Build websites and booking systems for tourism businesses in Weligama — surf camps, hostels, coliving spaces and rentals.',
       'Shipped Skyle POS, an offline Windows point-of-sale app with an embedded database and one-click installer.',
       'Set up automated deploys on GitHub Pages, Vercel and AWS Amplify, plus SEO and Search Console tooling for client sites.'
@@ -389,7 +390,18 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     technologies: ['React', 'TypeScript', 'Next.js', 'Node.js', 'MongoDB', 'Electron']
   },
   {
-    period: '2023 — 2024',
+    period: 'Oct 2024 — Oct 2025',
+    role: 'Front Office',
+    company: 'Garvey Properties',
+    location: 'Qatar',
+    achievements: [
+      'Worked front office for a real estate company, the first point of contact for clients and visitors.',
+      'Handled enquiries and supported the property team with day-to-day office operations.'
+    ],
+    technologies: []
+  },
+  {
+    period: '2022 — 2024',
     role: 'Software Engineering Student',
     company: 'IJSE (Institute of Software Engineering)',
     location: 'Sri Lanka',
@@ -398,5 +410,16 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Worked with the MERN stack, Bootstrap front ends, microservices and Python automation.'
     ],
     technologies: ['Java', 'Java EE', 'JavaScript', 'MySQL', 'Python', 'Bootstrap']
+  },
+  {
+    period: '2019 — Present',
+    role: 'Freelancer',
+    company: 'Upwork & Fiverr',
+    location: 'Remote',
+    achievements: [
+      'Started in 2019 offering social media marketing to international clients on Upwork and Fiverr.',
+      'Now offer web development, Next.js migrations and AI search visibility (GEO, AEO & SEO) services on Fiverr.'
+    ],
+    technologies: ['Social Media Marketing', 'Content', 'SEO']
   }
 ];

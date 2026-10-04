@@ -37,9 +37,9 @@ export const ContactSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Fiverr call to action */}
-          <div className="lg:col-span-7 p-8 rounded-2xl border border-emerald-900/50 bg-gradient-to-br from-emerald-950/40 via-surface to-surface shadow-xl flex flex-col">
+          <div className="lg:col-span-7 lg:sticky lg:top-24 p-8 rounded-2xl border border-emerald-900/50 bg-gradient-to-br from-emerald-950/40 via-surface to-surface shadow-xl flex flex-col">
             <div className="text-xs font-mono text-emerald-400 uppercase tracking-wider">Freelance projects</div>
             <h3 className="text-2xl font-bold text-white font-display mt-2">Hire me on Fiverr</h3>
             <p className="text-sm text-neutral-300 mt-2 max-w-lg leading-relaxed">
@@ -76,7 +76,7 @@ export const ContactSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-8 lg:mt-auto lg:pt-8">
+            <div className="mt-8">
               <a
                 href={DEVELOPER_PROFILE.fiverr}
                 target="_blank"

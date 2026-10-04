@@ -15,7 +15,7 @@ export const ExperienceSection: React.FC = () => {
             Work Experience &amp; Education
           </h2>
           <p className="text-neutral-400 text-sm sm:text-base mt-2 max-w-xl">
-            Freelance work for tourism and small businesses in Sri Lanka, built on a software engineering foundation from IJSE.
+            From social media marketing on Upwork and Fiverr, through software engineering at IJSE and a year in Qatar, to co-founding Grobern.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export const ExperienceSection: React.FC = () => {
               className="relative flex flex-col md:flex-row gap-6 md:gap-12 items-start"
             >
               {/* Period Column */}
-              <div className="md:w-48 pl-10 md:pl-0 md:text-right shrink-0">
+              <div className="md:w-48 pl-10 md:pl-0 md:pr-8 md:text-right shrink-0">
                 <span className="text-xs font-mono text-orange-400 font-semibold tracking-wide">
                   {item.period}
                 </span>
@@ -65,15 +65,17 @@ export const ExperienceSection: React.FC = () => {
                   </ul>
 
                   {/* Technologies Used (Unboxed Discipline) */}
-                  <div className="pt-4 border-t border-neutral-800/60 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-neutral-400 font-mono">
-                    <span className="text-neutral-400">Environment:</span>
-                    {item.technologies.map((tech, tIdx) => (
-                      <span key={tech} className="flex items-center gap-1.5">
-                        {tIdx > 0 && <span aria-hidden="true" className="text-neutral-700">·</span>}
-                        <span className="text-neutral-300">{tech}</span>
-                      </span>
-                    ))}
-                  </div>
+                  {item.technologies.length > 0 && (
+                    <div className="pt-4 border-t border-neutral-800/60 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-neutral-400 font-mono">
+                      <span className="text-neutral-400">Environment:</span>
+                      {item.technologies.map((tech, tIdx) => (
+                        <span key={tech} className="flex items-center gap-1.5">
+                          {tIdx > 0 && <span aria-hidden="true" className="text-neutral-700">·</span>}
+                          <span className="text-neutral-300">{tech}</span>
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

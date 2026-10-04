@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { SKILLS_DATA } from '../data/portfolioData';
 import { SkillItem } from '../types/portfolio';
-import { Sparkles, Code2, Server, Cloud, Database } from 'lucide-react';
+import { Sparkles, Code2, Server, Cloud, Database, ChevronDown, ChevronUp } from 'lucide-react';
 
 interface SkillsSectionProps {
   onSelectProjectHighlight?: (projectName: string) => void;
 }
 
+const SKILLS_PAGE_SIZE = 6;
+
 export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHighlight }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [visibleCount, setVisibleCount] = useState(SKILLS_PAGE_SIZE);
   const [hoveredSkill, setHoveredSkill] = useState<SkillItem | null>(null);
 
   const categories = [
@@ -62,7 +65,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
               Skills &amp; Production Mastery
             </h2>
             <p className="text-neutral-400 text-sm sm:text-base mt-2 max-w-xl">
-              Quantitative breakdown of full-stack proficiencies honed across 8+ years of production engineering, scale, and high-concurrency systems.
+              Full-stack skills built since 2022, from IJSE coursework to client websites, booking systems and POS software in production.
             </p>
           </div>
 
@@ -88,7 +91,10 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
             return (
               <button
                 key={cat.id}
-                onClick={() => setSelectedCategory(cat.id)}
+                onClick={() => {
+                  setSelectedCategory(cat.id);
+                  setVisibleCount(SKILLS_PAGE_SIZE);
+                }}
                 className={`flex items-center gap-2 px-3.5 py-2 text-xs font-medium rounded-lg transition-all whitespace-nowrap ${
                   isActive
                     ? 'bg-neutral-800 text-white shadow-sm border border-neutral-700/60'
@@ -111,7 +117,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
 
         {/* Skills Grid with Custom Progress Bars */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {filteredSkills.map((skill) => {
+          {filteredSkills.slice(0, visibleCount).map((skill) => {
             const isHovered = hoveredSkill?.id === skill.id;
 
             return (
@@ -183,6 +189,37 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
             );
           })}
         </div>
+
+        {/* Load more / show less */}
+        {filteredSkills.length > SKILLS_PAGE_SIZE && (
+          <div className="mt-8 flex flex-col items-center gap-2">
+            {visibleCount < filteredSkills.length ? (
+              <button
+                type="button"
+                onClick={() => setVisibleCount((n) => n + SKILLS_PAGE_SIZE)}
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-white bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 hover:border-orange-400/60 rounded-lg transition-colors"
+              >
+                <span>Load more skills</span>
+                <ChevronDown className="w-4 h-4 text-orange-400" />
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={() => {
+                  setVisibleCount(SKILLS_PAGE_SIZE);
+                  document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-white bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 hover:border-orange-400/60 rounded-lg transition-colors"
+              >
+                <span>Show less</span>
+                <ChevronUp className="w-4 h-4 text-orange-400" />
+              </button>
+            )}
+            <span className="text-[11px] font-mono text-neutral-500 tabular-nums">
+              Showing {Math.min(visibleCount, filteredSkills.length)} of {filteredSkills.length}
+            </span>
+          </div>
+        )}
 
         {/* Bottom Architectural Guarantee */}
         <div className="mt-12 p-6 rounded-xl border border-neutral-800/80 bg-neutral-900/30 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-400">

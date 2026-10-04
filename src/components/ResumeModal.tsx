@@ -153,7 +153,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                 <span className="font-semibold text-white">Graduate Diploma in Software Engineering (GDSE)</span>
                 <span className="text-neutral-400 ml-2">IJSE, Sri Lanka</span>
               </div>
-              <span className="text-neutral-500 font-mono">2023 — 2024</span>
+              <span className="text-neutral-500 font-mono">2022 — 2024</span>
             </div>
           </div>
         </div>

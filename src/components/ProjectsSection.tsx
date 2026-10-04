@@ -40,7 +40,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <div className="text-xs uppercase tracking-widest text-cyan-400 font-mono mb-2">
+            <div className="text-xs uppercase tracking-widest text-orange-400 font-mono mb-2">
               Featured Case Studies
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-display tracking-tight">
@@ -73,7 +73,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 
         {/* Highlight Alert if filtered from skills */}
         {highlightedProjectName && (
-          <div className="mb-6 px-4 py-2.5 rounded-lg bg-cyan-950/40 border border-cyan-800/50 flex items-center justify-between text-xs text-cyan-300">
+          <div className="mb-6 px-4 py-2.5 rounded-lg bg-orange-950/40 border border-orange-800/50 flex items-center justify-between text-xs text-orange-300">
             <span>Filtered by related competency: &ldquo;{highlightedProjectName}&rdquo;</span>
             <button
               onClick={() => setSelectedFilter('all')}
@@ -93,7 +93,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               <div
                 key={project.id}
                 onClick={() => setActiveModalProject(project)}
-                className={`group relative overflow-hidden rounded-2xl border border-neutral-800 bg-surface cursor-pointer transition-all duration-300 hover:border-neutral-600 hover:shadow-2xl hover:shadow-cyan-950/20 flex flex-col ${
+                className={`group relative overflow-hidden rounded-2xl border border-neutral-800 bg-surface cursor-pointer transition-all duration-300 hover:border-neutral-600 hover:shadow-2xl hover:shadow-orange-950/20 flex flex-col ${
                   isFeatured ? 'md:col-span-2 lg:col-span-2' : 'col-span-1'
                 }`}
               >
@@ -113,13 +113,13 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                     <span className="text-neutral-400 backdrop-blur-md bg-black/60 px-2.5 py-1 rounded border border-neutral-800">
                       {project.clientOrContext}
                     </span>
-                    <span className="text-cyan-400 backdrop-blur-md bg-black/60 px-2.5 py-1 rounded border border-neutral-800 tabular-nums">
+                    <span className="text-orange-400 backdrop-blur-md bg-black/60 px-2.5 py-1 rounded border border-neutral-800 tabular-nums">
                       {project.year}
                     </span>
                   </div>
 
                   {/* Primary Performance Metric Overlay in Corner */}
-                  <div className="absolute bottom-3 left-4 text-xs font-mono text-cyan-300 bg-neutral-950/80 backdrop-blur-sm border border-neutral-800/80 px-2.5 py-1 rounded">
+                  <div className="absolute bottom-3 left-4 text-xs font-mono text-orange-300 bg-neutral-950/80 backdrop-blur-sm border border-neutral-800/80 px-2.5 py-1 rounded">
                     {project.metrics[0].label}: <strong className="text-white">{project.metrics[0].value}</strong>
                   </div>
                 </div>
@@ -129,10 +129,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                   <div>
                     {/* Header */}
                     <div className="flex items-start justify-between gap-4 mb-2">
-                      <h3 className="text-xl font-bold text-white font-display group-hover:text-cyan-400 transition-colors">
+                      <h3 className="text-xl font-bold text-white font-display group-hover:text-orange-400 transition-colors">
                         {project.title}
                       </h3>
-                      <div className="p-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-400 group-hover:text-cyan-400 group-hover:border-neutral-700 transition-all shrink-0">
+                      <div className="p-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-400 group-hover:text-orange-400 group-hover:border-neutral-700 transition-all shrink-0">
                         <ArrowUpRight className="w-4 h-4" />
                       </div>
                     </div>
@@ -147,7 +147,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                   <div className="mt-4 pt-4 border-t border-neutral-800/60 space-y-3">
                     {/* Technical problem highlight */}
                     <div className="text-xs text-neutral-300 bg-neutral-900/60 p-3 rounded-lg border border-neutral-800/60 transition-all group-hover:border-neutral-700/80">
-                      <div className="text-[10px] font-mono text-cyan-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                      <div className="text-[10px] font-mono text-orange-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
                         <Terminal className="w-3 h-3" />
                         <span>Core Engineering Feat</span>
                       </div>
@@ -173,7 +173,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 
                     {/* Action Links Bar */}
                     <div className="pt-2 flex items-center justify-between text-xs">
-                      <span className="text-cyan-400 font-medium group-hover:underline flex items-center gap-1">
+                      <span className="text-orange-400 font-medium group-hover:underline flex items-center gap-1">
                         View Project Details
                         <span aria-hidden="true">&rarr;</span>
                       </span>

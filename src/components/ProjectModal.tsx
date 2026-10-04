@@ -58,7 +58,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
 
           {/* Title Banner Overlay */}
           <div className="absolute bottom-4 left-6 right-6">
-            <div className="text-xs text-cyan-400 font-mono flex items-center gap-2 mb-1">
+            <div className="text-xs text-orange-400 font-mono flex items-center gap-2 mb-1">
               <span>{project.clientOrContext}</span>
               <span aria-hidden="true">·</span>
               <span>{project.year}</span>
@@ -83,7 +83,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
             {project.metrics.map((metric) => (
               <div key={metric.label} className="text-center sm:text-left">
                 <div className="text-xs text-neutral-400 uppercase tracking-wider">{metric.label}</div>
-                <div className="text-lg sm:text-xl font-bold text-cyan-400 tabular-nums mt-0.5">
+                <div className="text-lg sm:text-xl font-bold text-orange-400 tabular-nums mt-0.5">
                   {metric.value}
                 </div>
               </div>
@@ -132,7 +132,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
               {project.technologies.map((tech, idx) => (
                 <span key={tech} className="flex items-center gap-2">
                   {idx > 0 && <span aria-hidden="true" className="text-neutral-700">·</span>}
-                  <span className="text-cyan-300">{tech}</span>
+                  <span className="text-orange-300">{tech}</span>
                 </span>
               ))}
             </div>
@@ -148,7 +148,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
                   rel="noreferrer"
                   className="flex items-center gap-2 px-4 py-2 text-xs font-medium text-white bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 rounded-lg transition-colors"
                 >
-                  <Github className="w-4 h-4 text-cyan-400" />
+                  <Github className="w-4 h-4 text-orange-400" />
                   <span>Repository</span>
                 </a>
               )}
@@ -157,7 +157,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
                   href={project.liveUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 text-xs font-medium text-neutral-950 bg-cyan-400 hover:bg-cyan-300 rounded-lg font-semibold transition-colors"
+                  className="flex items-center gap-2 px-4 py-2 text-xs font-medium text-neutral-950 bg-orange-400 hover:bg-orange-300 rounded-lg font-semibold transition-colors"
                 >
                   <ExternalLink className="w-4 h-4" />
                   <span>Live Site</span>
@@ -174,7 +174,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
               className="flex items-center gap-1.5 text-xs text-neutral-400 hover:text-white transition-colors"
             >
               <span>Need Something Similar?</span>
-              <ArrowRight className="w-3.5 h-3.5 text-cyan-400" />
+              <ArrowRight className="w-3.5 h-3.5 text-orange-400" />
             </button>
           </div>
         </div>

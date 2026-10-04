@@ -27,7 +27,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
       >
         {/* Sticky action bar */}
         <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-4 bg-surface/95 border-b border-neutral-800 backdrop-blur-md">
-          <div className="flex items-center gap-2 text-xs font-mono text-cyan-400">
+          <div className="flex items-center gap-2 text-xs font-mono text-orange-400">
             <span>CURRICULUM VITAE</span>
             <span aria-hidden="true">·</span>
             <span>{DEVELOPER_PROFILE.name.toUpperCase()}</span>
@@ -59,7 +59,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               <h1 className="text-3xl font-extrabold text-white font-display tracking-tight">
                 {DEVELOPER_PROFILE.name}
               </h1>
-              <p className="text-sm font-medium text-cyan-400 mt-1">
+              <p className="text-sm font-medium text-orange-400 mt-1">
                 {DEVELOPER_PROFILE.role}
               </p>
             </div>
@@ -82,7 +82,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           {/* Executive Summary */}
           <div>
-            <h2 className="text-xs font-mono uppercase text-cyan-400 tracking-wider mb-2 font-bold">
+            <h2 className="text-xs font-mono uppercase text-orange-400 tracking-wider mb-2 font-bold">
               Professional Summary
             </h2>
             <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
@@ -92,7 +92,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           {/* Core Technical Strengths */}
           <div>
-            <h2 className="text-xs font-mono uppercase text-cyan-400 tracking-wider mb-3 font-bold">
+            <h2 className="text-xs font-mono uppercase text-orange-400 tracking-wider mb-3 font-bold">
               Core Technical Competencies
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
@@ -117,7 +117,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           {/* Work Experience */}
           <div>
-            <h2 className="text-xs font-mono uppercase text-cyan-400 tracking-wider mb-4 font-bold">
+            <h2 className="text-xs font-mono uppercase text-orange-400 tracking-wider mb-4 font-bold">
               Experience
             </h2>
             <div className="space-y-6">
@@ -127,11 +127,11 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                     <div className="font-bold text-white text-sm">
                       {exp.role} <span className="text-neutral-400 font-normal">at {exp.company}</span>
                     </div>
-                    <div className="text-xs font-mono text-cyan-400 tabular-nums">
+                    <div className="text-xs font-mono text-orange-400 tabular-nums">
                       {exp.period}
                     </div>
                   </div>
-                  <ul className="space-y-1.5 pl-3 list-disc list-outside text-xs text-neutral-400 marker:text-cyan-400">
+                  <ul className="space-y-1.5 pl-3 list-disc list-outside text-xs text-neutral-400 marker:text-orange-400">
                     {exp.achievements.map((item, idx) => (
                       <li key={idx} className="leading-relaxed">
                         {item}
@@ -145,7 +145,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           {/* Education & Credentials */}
           <div className="pt-4 border-t border-neutral-800">
-            <h2 className="text-xs font-mono uppercase text-cyan-400 tracking-wider mb-2 font-bold">
+            <h2 className="text-xs font-mono uppercase text-orange-400 tracking-wider mb-2 font-bold">
               Education &amp; Certifications
             </h2>
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between text-xs">

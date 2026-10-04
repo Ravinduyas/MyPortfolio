@@ -26,7 +26,7 @@ export const ContactSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="mb-14">
-          <div className="text-xs uppercase tracking-widest text-cyan-400 font-mono mb-2">
+          <div className="text-xs uppercase tracking-widest text-orange-400 font-mono mb-2">
             Hire Me
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-display tracking-tight">
@@ -45,19 +45,6 @@ export const ContactSection: React.FC = () => {
             <p className="text-sm text-neutral-300 mt-2 max-w-lg leading-relaxed">
               All project work, messages and payments go through Fiverr, so you get clear offers, milestone delivery and Fiverr&apos;s buyer protection.
             </p>
-
-            <ol className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {STEPS.map(({ icon: Icon, title, text }, idx) => (
-                <li key={title} className="p-4 rounded-xl bg-neutral-900/60 border border-neutral-800">
-                  <div className="flex items-center gap-2">
-                    <span className="text-[11px] font-mono text-neutral-500">0{idx + 1}</span>
-                    <Icon className="w-4 h-4 text-emerald-400" />
-                  </div>
-                  <div className="text-sm font-semibold text-white mt-2">{title}</div>
-                  <div className="text-xs text-neutral-400 mt-1 leading-relaxed">{text}</div>
-                </li>
-              ))}
-            </ol>
 
             {/* Fiverr gigs */}
             <div className="mt-8">
@@ -114,7 +101,7 @@ export const ContactSection: React.FC = () => {
             {/* Email with copy */}
             <div className="p-4 rounded-xl bg-neutral-900/60 border border-neutral-800/80 flex items-center justify-between gap-3">
               <div className="flex items-center gap-3 overflow-hidden">
-                <div className="p-2 rounded-lg bg-neutral-800 text-cyan-400 shrink-0">
+                <div className="p-2 rounded-lg bg-neutral-800 text-orange-400 shrink-0">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div className="truncate">
@@ -159,7 +146,7 @@ export const ContactSection: React.FC = () => {
                 className="p-4 rounded-xl bg-neutral-900/60 border border-neutral-800/80 hover:border-neutral-600 flex items-center justify-between gap-3 transition-colors group"
               >
                 <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-neutral-800 text-cyan-400 shrink-0">
+                  <div className="p-2 rounded-lg bg-neutral-800 text-orange-400 shrink-0">
                     <Icon className="w-4 h-4" />
                   </div>
                   <div>
@@ -167,9 +154,28 @@ export const ContactSection: React.FC = () => {
                     <div className="text-xs font-semibold text-white">{handle}</div>
                   </div>
                 </div>
-                <ArrowUpRight className="w-4 h-4 text-neutral-500 group-hover:text-cyan-400 transition-colors" />
+                <ArrowUpRight className="w-4 h-4 text-neutral-500 group-hover:text-orange-400 transition-colors" />
               </a>
             ))}
+
+            {/* How hiring works */}
+            <h3 className="pt-4 text-sm font-semibold text-white font-mono uppercase tracking-wider">
+              How hiring works
+            </h3>
+            <ol className="space-y-3">
+              {STEPS.map(({ icon: Icon, title, text }, idx) => (
+                <li key={title} className="p-4 rounded-xl bg-neutral-900/60 border border-neutral-800/80 flex items-start gap-3">
+                  <div className="p-2 rounded-lg bg-neutral-800 text-emerald-400 shrink-0">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <div className="text-[11px] text-neutral-500 font-mono">Step 0{idx + 1}</div>
+                    <div className="text-xs font-semibold text-white">{title}</div>
+                    <div className="text-xs text-neutral-400 mt-1 leading-relaxed">{text}</div>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </div>

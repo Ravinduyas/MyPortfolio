@@ -55,7 +55,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <div className="text-xs uppercase tracking-widest text-cyan-400 font-mono mb-2">
+            <div className="text-xs uppercase tracking-widest text-orange-400 font-mono mb-2">
               Engineering Competencies
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-display tracking-tight">
@@ -69,7 +69,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
           {/* Quick Domain Summary Stats */}
           <div className="flex items-center gap-6 text-xs text-neutral-400 font-mono bg-neutral-900/80 border border-neutral-800 px-4 py-3 rounded-lg">
             <div>
-              <span className="text-white font-semibold text-sm tabular-nums text-cyan-400">{filteredSkills.length}</span>
+              <span className="text-white font-semibold text-sm tabular-nums text-orange-400">{filteredSkills.length}</span>
               <span className="ml-1.5 text-neutral-400">Core Technologies</span>
             </div>
             <div className="w-px h-6 bg-neutral-800" aria-hidden="true" />
@@ -95,11 +95,11 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
                     : 'text-neutral-400 hover:text-white hover:bg-neutral-800/40'
                 }`}
               >
-                <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-cyan-400' : 'text-neutral-500'}`} />
+                <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-orange-400' : 'text-neutral-500'}`} />
                 <span>{cat.label}</span>
                 <span
                   className={`text-[10px] font-mono tabular-nums px-1.5 py-0.5 rounded ${
-                    isActive ? 'bg-neutral-900 text-cyan-400' : 'text-neutral-500'
+                    isActive ? 'bg-neutral-900 text-orange-400' : 'text-neutral-500'
                   }`}
                 >
                   {cat.count}
@@ -128,7 +128,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
                 {/* Title & Level Header */}
                 <div className="flex items-start justify-between gap-4 mb-2">
                   <div>
-                    <h3 className="text-sm font-semibold text-white group-hover:text-cyan-300 transition-colors">
+                    <h3 className="text-sm font-semibold text-white group-hover:text-orange-300 transition-colors">
                       {skill.name}
                     </h3>
                     <div className="flex items-center gap-2 text-xs text-neutral-400 mt-0.5">
@@ -140,7 +140,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
 
                   {/* Percentage Metric in Tabular Numerals */}
                   <div className="text-right">
-                    <span className="text-base font-bold font-mono tabular-nums text-white group-hover:text-cyan-400 transition-colors">
+                    <span className="text-base font-bold font-mono tabular-nums text-white group-hover:text-orange-400 transition-colors">
                       {skill.level}%
                     </span>
                   </div>
@@ -150,7 +150,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
                 <div className="my-3">
                   <div className="h-2 w-full bg-neutral-800/90 rounded-full overflow-hidden relative p-[1px]">
                     <div
-                      className="h-full rounded-full bg-gradient-to-r from-neutral-300 via-cyan-400 to-blue-500 transition-all duration-700 ease-out group-hover:shadow-[0_0_8px_rgba(6,182,212,0.6)]"
+                      className="h-full rounded-full bg-gradient-to-r from-neutral-300 via-orange-400 to-orange-600 transition-all duration-700 ease-out group-hover:shadow-[0_0_8px_rgba(249,115,22,0.6)]"
                       style={{ width: `${skill.level}%` }}
                     />
                   </div>
@@ -171,7 +171,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
                         <button
                           type="button"
                           onClick={() => onSelectProjectHighlight && onSelectProjectHighlight(proj)}
-                          className="hover:text-cyan-400 transition-colors cursor-pointer"
+                          className="hover:text-orange-400 transition-colors cursor-pointer"
                         >
                           {proj}
                         </button>
@@ -187,14 +187,14 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ onSelectProjectHig
         {/* Bottom Architectural Guarantee */}
         <div className="mt-12 p-6 rounded-xl border border-neutral-800/80 bg-neutral-900/30 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-400">
           <div className="flex items-center gap-3">
-            <div className="w-2 h-2 rounded-full bg-cyan-400" />
+            <div className="w-2 h-2 rounded-full bg-orange-400" />
             <span className="text-neutral-300">
               Every skill here is backed by a project you can open, from client websites to desktop POS software.
             </span>
           </div>
           <a
             href="#projects"
-            className="text-cyan-400 hover:text-cyan-300 font-medium whitespace-nowrap transition-colors"
+            className="text-orange-400 hover:text-orange-300 font-medium whitespace-nowrap transition-colors"
           >
             Review Project Proof Points &rarr;
           </a>

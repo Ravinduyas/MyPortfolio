@@ -8,7 +8,7 @@ export const ExperienceSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="mb-14">
-          <div className="text-xs uppercase tracking-widest text-cyan-400 font-mono mb-2">
+          <div className="text-xs uppercase tracking-widest text-orange-400 font-mono mb-2">
             Career Progression
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-display tracking-tight">
@@ -28,7 +28,7 @@ export const ExperienceSection: React.FC = () => {
             >
               {/* Period Column */}
               <div className="md:w-48 pl-10 md:pl-0 md:text-right shrink-0">
-                <span className="text-xs font-mono text-cyan-400 font-semibold tracking-wide">
+                <span className="text-xs font-mono text-orange-400 font-semibold tracking-wide">
                   {item.period}
                 </span>
                 <div className="text-xs text-neutral-400 mt-1">{item.location}</div>
@@ -36,7 +36,7 @@ export const ExperienceSection: React.FC = () => {
 
               {/* Dot Anchor on Timeline */}
               <div
-                className="absolute left-3.5 md:left-48 -translate-x-1/2 top-1.5 w-3 h-3 rounded-full bg-neutral-950 border-2 border-cyan-400 z-10"
+                className="absolute left-3.5 md:left-48 -translate-x-1/2 top-1.5 w-3 h-3 rounded-full bg-neutral-950 border-2 border-orange-400 z-10"
                 aria-hidden="true"
               />
 
@@ -58,7 +58,7 @@ export const ExperienceSection: React.FC = () => {
                   <ul className="space-y-2.5 my-4">
                     {item.achievements.map((ach) => (
                       <li key={ach} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-400 leading-relaxed">
-                        <Check className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                        <Check className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
                         <span>{ach}</span>
                       </li>
                     ))}
